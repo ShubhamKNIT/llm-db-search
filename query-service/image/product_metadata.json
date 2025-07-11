@@ -1,0 +1,642 @@
+[
+  {
+    "id": 16,
+    "title": "Vivo Y100",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Vivo Y100.jpg",
+    "brand": "Vivo",
+    "price": 21999.0
+  },
+  {
+    "id": 9,
+    "title": "Samsung Galaxy M14",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Samsung Galaxy M14.jpg",
+    "brand": "Samsung",
+    "price": 12999.0
+  },
+  {
+    "id": 13,
+    "title": "Tecno Pova 5 Pro",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Tecno Pova 5 Pro.jpg",
+    "brand": "Tecno",
+    "price": 15999.0
+  },
+  {
+    "id": 6,
+    "title": "Poco X5",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Poco X5.jpg",
+    "brand": "Poco",
+    "price": 16999.0
+  },
+  {
+    "id": 12,
+    "title": "OnePlus Nord CE 3 Lite",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/OnePlus Nord CE 3 Lite.jpg",
+    "brand": "OnePlus",
+    "price": 19999.0
+  },
+  {
+    "id": 2,
+    "title": "Redmi Note 12",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Redmi Note 12.jpg",
+    "brand": "Xiaomi",
+    "price": 14999.0
+  },
+  {
+    "id": 14,
+    "title": "Nokia G60 5G",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Nokia G60 5G.jpg",
+    "brand": "Nokia",
+    "price": 19999.0
+  },
+  {
+    "id": 4,
+    "title": "iQOO Z7",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/iQOO Z7.jpg",
+    "brand": "iQOO",
+    "price": 18999.0
+  },
+  {
+    "id": 5,
+    "title": "Motorola G73",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Motorola G73.jpg",
+    "brand": "Motorola",
+    "price": 18999.0
+  },
+  {
+    "id": 10,
+    "title": "Vivo T2",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Vivo T2.jpg",
+    "brand": "Vivo",
+    "price": 15999.0
+  },
+  {
+    "id": 35,
+    "title": "Huawei Nova 10 Pro",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Huawei Nova 10 Pro.jpg",
+    "brand": "Huawei",
+    "price": 39999.0
+  },
+  {
+    "id": 36,
+    "title": "Tecno Camon 19 Pro",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Tecno Camon 19 Pro.jpg",
+    "brand": "Tecno",
+    "price": 19999.0
+  },
+  {
+    "id": 15,
+    "title": "Honor X40 GT",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Honor X40 GT.jpg",
+    "brand": "Honor",
+    "price": 24999.0
+  },
+  {
+    "id": 33,
+    "title": "Realme GT 2 Pro",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Realme GT 2 Pro.jpg",
+    "brand": "Realme",
+    "price": 49999.0
+  },
+  {
+    "id": 8,
+    "title": "Lava Blaze 5G",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Lava Blaze 5G.jpg",
+    "brand": "Lava",
+    "price": 11999.0
+  },
+  {
+    "id": 25,
+    "title": "Oppo Find N2 Flip",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Oppo Find N2 Flip.jpg",
+    "brand": "Oppo",
+    "price": 89999.0
+  },
+  {
+    "id": 26,
+    "title": "Huawei P60 Pro",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Huawei P60 Pro.jpg",
+    "brand": "Huawei",
+    "price": 79999.0
+  },
+  {
+    "id": 34,
+    "title": "Vivo V25 Pro",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Vivo V25 Pro.jpg",
+    "brand": "Vivo",
+    "price": 32999.0
+  },
+  {
+    "id": 27,
+    "title": "Vivo X90 Pro",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Vivo X90 Pro.jpg",
+    "brand": "Vivo",
+    "price": 74999.0
+  },
+  {
+    "id": 23,
+    "title": "Sony Xperia 1 V",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Sony Xperia 1 V.jpg",
+    "brand": "Sony",
+    "price": 99999.0
+  },
+  {
+    "id": 28,
+    "title": "Xiaomi 13 Ultra",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Xiaomi 13 Ultra.jpg",
+    "brand": "Xiaomi",
+    "price": 89999.0
+  },
+  {
+    "id": 30,
+    "title": "Sony Xperia 5 V",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Sony Xperia 5 V.jpg",
+    "brand": "Sony",
+    "price": 59999.0
+  },
+  {
+    "id": 29,
+    "title": "Google Pixel Fold",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Google Pixel Fold.jpg",
+    "brand": "Google",
+    "price": 179999.0
+  },
+  {
+    "id": 21,
+    "title": "Xiaomi 13 Pro",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Xiaomi 13 Pro.jpg",
+    "brand": "Xiaomi",
+    "price": 74999.0
+  },
+  {
+    "id": 20,
+    "title": "OnePlus 11",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/OnePlus 11.jpg",
+    "brand": "OnePlus",
+    "price": 56999.0
+  },
+  {
+    "id": 19,
+    "title": "Samsung Galaxy S23",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Samsung Galaxy S23.jpg",
+    "brand": "Samsung",
+    "price": 74999.0
+  },
+  {
+    "id": 18,
+    "title": "Apple iPhone SE (2022)",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Apple iPhone SE (2022).jpg",
+    "brand": "Apple",
+    "price": 42999.0
+  },
+  {
+    "id": 40,
+    "title": "Vivo S9",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Vivo S9.jpg",
+    "brand": "Vivo",
+    "price": 29999.0
+  },
+  {
+    "id": 32,
+    "title": "Oppo Reno 8 Pro",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Oppo Reno 8 Pro.jpg",
+    "brand": "Oppo",
+    "price": 32999.0
+  },
+  {
+    "id": 3,
+    "title": "Realme Narzo 60",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Realme Narzo 60.jpg",
+    "brand": "Realme",
+    "price": 15999.0
+  },
+  {
+    "id": 37,
+    "title": "Lava Agni 2 5G",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Lava Agni 2 5G.jpg",
+    "brand": "Lava",
+    "price": 19999.0
+  },
+  {
+    "id": 11,
+    "title": "Oppo A78",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Oppo A78.jpg",
+    "brand": "Oppo",
+    "price": 18999.0
+  },
+  {
+    "id": 17,
+    "title": "Google Pixel 7a",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Google Pixel 7a.jpg",
+    "brand": "Google",
+    "price": 43999.0
+  },
+  {
+    "id": 24,
+    "title": "Asus Zenfone 10",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Asus Zenfone 10.jpg",
+    "brand": "Asus",
+    "price": 59999.0
+  },
+  {
+    "id": 39,
+    "title": "Honor X30",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Honor X30.jpg",
+    "brand": "Honor",
+    "price": 17999.0
+  },
+  {
+    "id": 41,
+    "title": "Realme 9 Pro+",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Realme 9 Pro+.jpg",
+    "brand": "Realme",
+    "price": 24999.0
+  },
+  {
+    "id": 7,
+    "title": "Infinix Zero 5G",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Infinix Zero 5G.jpg",
+    "brand": "Infinix",
+    "price": 14999.0
+  },
+  {
+    "id": 38,
+    "title": "Nokia G11 Plus",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Nokia G11 Plus.jpg",
+    "brand": "Nokia",
+    "price": 10999.0
+  },
+  {
+    "id": 31,
+    "title": "Asus ROG Phone 7",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Asus ROG Phone 7.jpg",
+    "brand": "Asus",
+    "price": 79999.0
+  },
+  {
+    "id": 1,
+    "title": "Samsung Galaxy A14",
+    "category": "mobiles",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/mobiles/Samsung Galaxy A14.jpg",
+    "brand": "Samsung",
+    "price": 13999.0
+  },
+  {
+    "id": 17,
+    "title": "HP Envy x360",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/HP Envy x360.jpg",
+    "brand": "HP",
+    "price": 140000.0
+  },
+  {
+    "id": 5,
+    "title": "Asus ZenBook 14",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Asus ZenBook 14.jpg",
+    "brand": "Asus",
+    "price": 85000.0
+  },
+  {
+    "id": 10,
+    "title": "Samsung Galaxy Book Pro 360",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Samsung Galaxy Book Pro 360.jpg",
+    "brand": "Samsung",
+    "price": 140000.0
+  },
+  {
+    "id": 7,
+    "title": "Microsoft Surface Laptop 4",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Microsoft Surface Laptop 4.jpg",
+    "brand": "Microsoft",
+    "price": 130000.0
+  },
+  {
+    "id": 6,
+    "title": "Acer Swift 3",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Acer Swift 3.jpg",
+    "brand": "Acer",
+    "price": 60000.0
+  },
+  {
+    "id": 2,
+    "title": "Apple MacBook Air M2",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Apple MacBook Air M2.jpg",
+    "brand": "Apple",
+    "price": 99900.0
+  },
+  {
+    "id": 13,
+    "title": "Toshiba Dynabook Tecra A50",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Toshiba Dynabook Tecra A50.jpg",
+    "brand": "Toshiba",
+    "price": 90000.0
+  },
+  {
+    "id": 11,
+    "title": "Huawei MateBook X Pro",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Huawei MateBook X Pro.jpg",
+    "brand": "Huawei",
+    "price": 125000.0
+  },
+  {
+    "id": 3,
+    "title": "HP Spectre x360",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/HP Spectre x360.jpg",
+    "brand": "HP",
+    "price": 145000.0
+  },
+  {
+    "id": 15,
+    "title": "Dell XPS 13",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Dell XPS 13.jpg",
+    "brand": "Dell",
+    "price": 180000.0
+  },
+  {
+    "id": 1,
+    "title": "Dell XPS 13",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Dell XPS 13.jpg",
+    "brand": "Dell",
+    "price": 120000.0
+  },
+  {
+    "id": 18,
+    "title": "Asus ROG Zephyrus G14",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Asus ROG Zephyrus G14.jpg",
+    "brand": "Asus",
+    "price": 200000.0
+  },
+  {
+    "id": 16,
+    "title": "Lenovo Yoga 7i",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Lenovo Yoga 7i.jpg",
+    "brand": "Lenovo",
+    "price": 130000.0
+  },
+  {
+    "id": 26,
+    "title": "Acer Aspire 7",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Acer Aspire 7.jpg",
+    "brand": "Acer",
+    "price": 70000.0
+  },
+  {
+    "id": 14,
+    "title": "Acer Aspire 5",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Acer Aspire 5.jpg",
+    "brand": "Acer",
+    "price": 45000.0
+  },
+  {
+    "id": 8,
+    "title": "Razer Blade 15",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Razer Blade 15.jpg",
+    "brand": "Razer",
+    "price": 180000.0
+  },
+  {
+    "id": 24,
+    "title": "MSI Modern 14",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/MSI Modern 14.jpg",
+    "brand": "MSI",
+    "price": 60000.0
+  },
+  {
+    "id": 21,
+    "title": "LG Gram 14",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/LG Gram 14.jpg",
+    "brand": "LG",
+    "price": 140000.0
+  },
+  {
+    "id": 40,
+    "title": "Huawei MateBook X",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Huawei MateBook X.jpg",
+    "brand": "Huawei",
+    "price": 130000.0
+  },
+  {
+    "id": 30,
+    "title": "Asus VivoBook 15",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Asus VivoBook 15.jpg",
+    "brand": "Asus",
+    "price": 55000.0
+  },
+  {
+    "id": 28,
+    "title": "Lenovo IdeaPad 3",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Lenovo IdeaPad 3.jpg",
+    "brand": "Lenovo",
+    "price": 50000.0
+  },
+  {
+    "id": 36,
+    "title": "Microsoft Surface Pro 7",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Microsoft Surface Pro 7.jpg",
+    "brand": "Microsoft",
+    "price": 130000.0
+  },
+  {
+    "id": 22,
+    "title": "Samsung Galaxy Book Flex",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Samsung Galaxy Book Flex.jpg",
+    "brand": "Samsung",
+    "price": 150000.0
+  },
+  {
+    "id": 35,
+    "title": "Asus ExpertBook B9",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Asus ExpertBook B9.jpg",
+    "brand": "Asus",
+    "price": 180000.0
+  },
+  {
+    "id": 25,
+    "title": "Toshiba Satellite Pro C50",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Toshiba Satellite Pro C50.jpg",
+    "brand": "Toshiba",
+    "price": 40000.0
+  },
+  {
+    "id": 31,
+    "title": "Acer Swift 5",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Acer Swift 5.jpg",
+    "brand": "Acer",
+    "price": 120000.0
+  },
+  {
+    "id": 20,
+    "title": "Razer Blade Stealth 13",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Razer Blade Stealth 13.jpg",
+    "brand": "Razer",
+    "price": 150000.0
+  },
+  {
+    "id": 29,
+    "title": "HP Pavilion 15",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/HP Pavilion 15.jpg",
+    "brand": "HP",
+    "price": 70000.0
+  },
+  {
+    "id": 33,
+    "title": "Lenovo ThinkBook 14s",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Lenovo ThinkBook 14s.jpg",
+    "brand": "Lenovo",
+    "price": 120000.0
+  },
+  {
+    "id": 12,
+    "title": "MSI Prestige 14",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/MSI Prestige 14.jpg",
+    "brand": "MSI",
+    "price": 160000.0
+  },
+  {
+    "id": 39,
+    "title": "Samsung Galaxy Book Pro",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Samsung Galaxy Book Pro.jpg",
+    "brand": "Samsung",
+    "price": 140000.0
+  },
+  {
+    "id": 19,
+    "title": "Microsoft Surface Book 3",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Microsoft Surface Book 3.jpg",
+    "brand": "Microsoft",
+    "price": 170000.0
+  },
+  {
+    "id": 32,
+    "title": "Dell Latitude 7420",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Dell Latitude 7420.jpg",
+    "brand": "Dell",
+    "price": 150000.0
+  },
+  {
+    "id": 27,
+    "title": "Dell Inspiron 15",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Dell Inspiron 15.jpg",
+    "brand": "Dell",
+    "price": 65000.0
+  },
+  {
+    "id": 34,
+    "title": "HP Elite Dragonfly",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/HP Elite Dragonfly.jpg",
+    "brand": "HP",
+    "price": 200000.0
+  },
+  {
+    "id": 41,
+    "title": "MSI Prestige 15",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/MSI Prestige 15.jpg",
+    "brand": "MSI",
+    "price": 160000.0
+  },
+  {
+    "id": 37,
+    "title": "Razer Book 13",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Razer Book 13.jpg",
+    "brand": "Razer",
+    "price": 150000.0
+  },
+  {
+    "id": 23,
+    "title": "Huawei MateBook D 15",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Huawei MateBook D 15.jpg",
+    "brand": "Huawei",
+    "price": 55000.0
+  },
+  {
+    "id": 38,
+    "title": "LG Gram 15",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/LG Gram 15.jpg",
+    "brand": "LG",
+    "price": 150000.0
+  },
+  {
+    "id": 4,
+    "title": "Lenovo ThinkPad X1 Carbon",
+    "category": "laptops",
+    "image_url": "/Users/shubham/projects/llm-projects/llm-db-search/assets/laptops/Lenovo ThinkPad X1 Carbon.jpg",
+    "brand": "Lenovo",
+    "price": 135000.0
+  }
+]

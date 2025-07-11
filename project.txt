@@ -1,0 +1,39 @@
+project-root
+|______ frontend
+|       |______ api
+|       |       |______ query_llm.py
+|       |       |______ run_sql.py
+|       |       |______ transcribe_audio.py
+|       |       |______ query_image.py
+|       |______ main.py
+|       |______ .env
+|       |______ requirements.txt
+|______ query-service
+|       |______ api
+|       |       |______ routes.py
+|       |______ image
+|       |       |______ embedder.py
+|       |       |______ embedding_generator.py
+|       |       |______ search_image.py
+|       |______ text
+|       |       |______ hf_sql_query_generator.py
+|       |       |______ sql_query_generator.py
+|       |       |______ sql_schema_prompt.py
+|       |______ audio
+|       |       |______ whisper_transcriber.py
+|       |______ models
+|       |       |______ schemas.py
+|       |______ main.py
+|       |______ .env
+|       |______ requirements.txt
+|______ sql-service
+|      |______ db
+|      |      |______ pool.js
+|      |______ routes
+|      |      |______ runSql.js
+|      |______ utils
+|      |      |______ validateSql.js
+|      |______ index.js
+|      |______ .env
+|      |______ package.json
+|______ README.md

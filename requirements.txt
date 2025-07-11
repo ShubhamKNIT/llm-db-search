@@ -1,0 +1,13 @@
+torch
+transformers
+pydantic
+dotenv
+fastapi
+uvicorn
+streamlit
+stramlit-mic-recorder
+ffmpeg
+langchain
+langchain-ollama
+openai-whisper
+python-dotenv
