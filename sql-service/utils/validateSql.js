@@ -1,4 +1,4 @@
-// server/utils/validateSql.js
+// sql-service/utils/validateSql.js
 
 const ALLOWED_TABLES = ["mobiles", "laptops"];
 const BANNED_KEYWORDS = [";", "--", "drop", "delete", "update", "insert", "alter", "truncate"];

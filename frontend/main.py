@@ -2,66 +2,141 @@
 
 import streamlit as st
 import tempfile
+from api.query_image import query_image
 from api.query_llm import get_sql_from_llm
-from api.run_sql import run_sql
+from api.run_sql import run_sql, run_ids_sql_query
 from api.transcribe_audio import transcribe_audio
-from streamlit_mic_recorder import mic_recorder
+from utils.image_helper import make_entries_from_image_results, merge_records_with_distances
+from st_audiorec import st_audiorec
 
-def handle_transcription(audio_bytes) -> str:
-    """Save audio to disk and call backend API to transcribe."""
+def handle_transcription(audio_prompt):
+    # print("Received audio bytes for transcription")
+    # print(audio_prompt)
     with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as tmp:
-        tmp.write(audio_bytes["bytes"])
+        tmp.write(audio_prompt)
         tmp_path = tmp.name
     return transcribe_audio(tmp_path)
 
-
-def execute_search(query: str):
-    """Run LLM → SQL → DB and display results."""
-    with st.spinner("Generating SQL..."):
-        sql = get_sql_from_llm(query)
-        st.code(sql, language="sql")
+def run_text_search(query):
+    sql = get_sql_from_llm(query)
+    st.code(sql, language="sql")
 
     if sql.lower().startswith("select"):
-        with st.spinner("Fetching results..."):
-            results = run_sql(sql)
-        if not results:
-            st.warning("No results found.")
-        else:
-            for block in results:
-                st.subheader(f"Results for: `{block['query']}`")
-                st.dataframe(block["rows"])
+        results = run_sql(sql)
+        display_product_results(results)
+
     else:
         st.error("LLM did not return a SELECT query.")
 
+def run_image_search(uploaded_img):
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".jpg") as tmp:
+        tmp.write(uploaded_img.read())
+        tmp_path = tmp.name
+
+    # 1. Query image service
+    clip_results = query_image(tmp_path)
+
+    # 2. Get list of entries (id + distance)
+    entries = make_entries_from_image_results(clip_results)
+
+    # 3. Fetch from DB using just IDs
+    ids = [e["id"] for e in entries]
+    raw_records = run_ids_sql_query(ids)
+
+    # 4. Merge and sort by distance
+    merged = merge_records_with_distances(raw_records, entries)
+
+    # 5. Wrap in SQL-style dict so `display_product_results()` works
+    results = [{"query": "image_search", "rows": merged}]
+    display_product_results(results)
+
+
+def display_product_results(products_sql_response: list):
+    if not products_sql_response or not products_sql_response[0]["rows"]:
+        st.warning("No products to display.")
+        return
+
+    st.markdown("## 🛒 Matching Products")
+    rows = products_sql_response[0]["rows"]
+
+    for product in rows:
+        try:
+            st.markdown("---")
+            cols = st.columns([1, 4])
+
+            # Image Display
+            with cols[0]:
+                st.image(product.get("image_url", ""), width=120)
+
+            # Product Info
+            with cols[1]:
+                st.markdown(f"### {product.get('title', 'Unknown Product')}")
+                st.markdown(f"- **Brand:** {product.get('brand', 'N/A')}")
+                st.markdown(f"- **Price:** ₹{int(product.get('price', 0))}")
+                if "distance" in product:
+                    st.markdown(f"- **Similarity Distance:** `{product['distance']:.2f}`")
+        except Exception as e:
+            print(f"Error displaying product: {e}")
+            continue
 
 def main():
-    st.set_page_config(page_title="Product Search LLM", layout="wide")
-    st.title("🛍️ Natural Language Product Search (Text + Voice)")
+    st.set_page_config(page_title="Multimodal Product Search", layout="wide")
+    st.title("🛍️ Search Products by Text | Image | Voice")
 
-    col1, col2 = st.columns([2, 1])
-    query = ""
+    # Layout: Text | Image | Voice
+    col1, col2, col3 = st.columns([2, 2, 2])
 
-    # 🎤 Voice recording
-    with col2:
-        st.markdown("### 🎙️ Voice Search")
-        audio_bytes = mic_recorder(start_prompt="Click to Record", stop_prompt="Stop", key="mic")
-
-    # 📝 Text input
+    # Text Input Area
     with col1:
-        query = st.text_input("📝 Or type your query", placeholder="e.g., Laptops under 60k with touch screen")
+        st.markdown("#### 📝 Text Search")
+        text_prompt = st.text_input("Type your query", placeholder="e.g. Laptops under 70k with touch screen")
 
-    # 🎤 Handle voice transcription
-    if audio_bytes:
-        with st.spinner("Transcribing voice..."):
-            transcription = handle_transcription(audio_bytes)
-            query = transcription
-            st.success(f"You said: **{transcription}**")
-            execute_search(query)
+    # Image Upload Area
+    uploaded_img = None
+    with col2:
+        st.markdown("#### 🖼️ Image Search")
+        uploaded_img = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
+        if uploaded_img:
+            st.image(uploaded_img, caption="Uploaded Image", width=200)
 
-    # 🔍 Unified Search Button
-    if query and st.button("🔍 Search"):
-        execute_search(query)
+    # Voice Recording Area
+    with col3:
+        st.markdown("#### 🎙️ Voice Search")
+        st.markdown("Click the button below to record your voice query.")
 
+        audio_prompt = st_audiorec()
+
+    # Unified Search Trigger
+    st.markdown("---")
+    st.markdown("### 📦 Search Results")
+
+    # col4, col5 = st.columns([1, 1])
+    option = st.selectbox("Select Search Method", options=["Text", "Image", "Voice"], key="search_method")
+    if st.button("🔍 Search Now"):
+        if option == "Voice":
+            if audio_prompt:
+                with st.spinner("Transcribing voice..."):
+                    transcription = handle_transcription(audio_prompt)
+                    st.success(f"You said: **{transcription}**")
+                    run_text_search(transcription)
+            else:
+                st.warning("Voice input is empty. Please record your voice query.")
+
+        elif option == "Text":
+            if text_prompt:
+                with st.spinner("Searching from text..."):
+                    run_text_search(text_prompt)
+            else:
+                st.warning("Text input is empty. Please enter your query.")
+
+        elif option == "Image":
+            if uploaded_img:
+                with st.spinner("Searching from image..."):
+                    run_image_search(uploaded_img)
+            else:
+                st.warning("Image input is empty. Please upload an image.")
+        else:
+            st.warning("Please provide text, image, or voice input to search.")
 
 if __name__ == "__main__":
     main()

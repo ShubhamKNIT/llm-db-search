@@ -13,6 +13,7 @@ def transcribe_audio(file_path: str):
             files = {'file': (os.path.basename(file_path), f, "audio/mpeg")}
             response = requests.post(TRANSCRIBE_API_URL, files=files)
         response.raise_for_status()
+        print("✅ TRANSCRIBE API response:", response.json())
         return response.json().get("transcription", "")
     except Exception as e:
         print("❌ TRANSCRIBE API error:", e)
