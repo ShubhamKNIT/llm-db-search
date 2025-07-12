@@ -5,6 +5,8 @@ project-root
 |       |       |______ run_sql.py
 |       |       |______ transcribe_audio.py
 |       |       |______ query_image.py
+|       |______ utils
+|       |       |______ image_helper.py
 |       |______ main.py
 |       |______ .env
 |       |______ requirements.txt
@@ -12,9 +14,10 @@ project-root
 |       |______ api
 |       |       |______ routes.py
 |       |______ image
-|       |       |______ embedder.py
 |       |       |______ embedding_generator.py
 |       |       |______ search_image.py
+|       |       |______ image_index.faiss
+|       |       |______ product_metadata.json
 |       |______ text
 |       |       |______ hf_sql_query_generator.py
 |       |       |______ sql_query_generator.py
@@ -31,8 +34,10 @@ project-root
 |      |      |______ pool.js
 |      |______ routes
 |      |      |______ runSql.js
+|      |      |______ runIdsSql.js
 |      |______ utils
 |      |      |______ validateSql.js
+|      |      |______ createIdsSql.js
 |      |______ index.js
 |      |______ .env
 |      |______ package.json

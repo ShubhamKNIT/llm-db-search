@@ -46,3 +46,5 @@ pytest_cache/
 test
 assets
 crawler
+update_url.py
+download_images.py

@@ -18,6 +18,7 @@ Rules:
 - Use LIKE for partial matches in text fields.
 - Use numeric comparisons for fields like ratings, price, etc.
 - Make sure the query is valid SQL syntax, syntactically correct, and executable.
+- Use the correct table names and field names as per the schema.e
 
 Allowed tables [mobiles, laptops]:
 

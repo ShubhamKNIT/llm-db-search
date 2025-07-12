@@ -7,17 +7,20 @@ import faiss
 import psycopg2
 from PIL import Image
 from dotenv import load_dotenv
-from torchvision import transforms
 from transformers import CLIPProcessor, CLIPModel
 
 # Load environment variables
 load_dotenv()
 
 # Load CLIP model and processor
-model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
-processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
-device = "cuda" if torch.cuda.is_available() else "cpu"
-model.to(device)
+try:
+    model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
+    processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    model.to(device)
+except Exception as e:
+    print(f"❌ Failed to load CLIP model: {e}")
+    exit(1)
 
 # Image preprocessing
 def preprocess_image(image_path):

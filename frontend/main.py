@@ -33,22 +33,26 @@ def run_image_search(uploaded_img):
         tmp.write(uploaded_img.read())
         tmp_path = tmp.name
 
-    # 1. Query image service
+    # 1. Query image search service → returns top-N similar embeddings with id + distance
     clip_results = query_image(tmp_path)
 
-    # 2. Get list of entries (id + distance)
+    # 2. Convert those into {category: [{id, distance}, ...]}
     entries = make_entries_from_image_results(clip_results)
 
-    # 3. Fetch from DB using just IDs
-    ids = [e["id"] for e in entries]
-    raw_records = run_ids_sql_query(ids)
+    # 3. Fetch actual product data from the DB
+    raw_result = run_ids_sql_query(entries)
 
-    # 4. Merge and sort by distance
-    merged = merge_records_with_distances(raw_records, entries)
+    # 4. Merge and sort the results based on distance
+    all_rows = []
+    for block in raw_result:
+        all_rows.extend(block["rows"])
 
-    # 5. Wrap in SQL-style dict so `display_product_results()` works
+    merged = merge_records_with_distances(all_rows, entries)
+
+    # 5. Prepare result in format compatible with display
     results = [{"query": "image_search", "rows": merged}]
     display_product_results(results)
+
 
 
 def display_product_results(products_sql_response: list):
