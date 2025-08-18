@@ -8,6 +8,8 @@ import logging
 import os
 import uvicorn
 
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+
 # Load environment
 load_dotenv()
 
