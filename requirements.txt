@@ -4,14 +4,15 @@ streamlit-audiorec
 fastapi
 uvicorn
 openai-whisper
-pyscopg-binary
+psycopg2-binary
 torch
 torchvision
 transformers
-faiss
+faiss-cpu
 ffmpeg
 pydantic
 huggingface-hub
 langchain
 langchain-ollama
 langchain-core
+python-multipart

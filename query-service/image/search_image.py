@@ -8,7 +8,7 @@ from image.embedding_generator import model, preprocess_image
 
 def search_similar_images(query_image_path, top_k=5):
     # Load FAISS index and metadata
-    index = faiss.read_index(os.getenv("FAISS_INDEX_PATH", "faiss_index.index"))
+    index = faiss.read_index(os.getenv("FAISS_INDEX_PATH", "image_index.faiss"))
     with open(os.getenv("FAISS_METADATA_PATH", "product_metadata.json"), "r") as f:
         metadata = json.load(f)
 

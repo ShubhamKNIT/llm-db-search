@@ -6,7 +6,7 @@ const router = express.Router();
 import pool from "../db/pool.js";
 import isSafeSql from "../utils/validateSql.js";
 
-router.post("/run-sql", async (req, res) => {
+router.post("/run-sql-query", async (req, res) => {
     const { sql } = req.body;
 
     if (!sql || typeof sql !== "string") {
