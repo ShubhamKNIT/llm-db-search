@@ -1,7 +1,7 @@
 
 ## 🧠 LLM-Powered E-commerce Product Search
 
-[▶️ Watch Demo on YouTube](https://youtu.be/ZqixgR-ez60)
+[▶️ Watch Demo on YouTube](https://youtu.be/YRdhz58UdcU?si=h8fdZUOjXqG_3KjI)
 
 > Natural Language → SQL → PostgreSQL → Results
 
