@@ -5,7 +5,8 @@ __pycache__/
 *.pyd
 *.so
 *.log
-
+*.zip
+tech_stack_qa.md
 # Virtual environments
 .venv/
 venv/

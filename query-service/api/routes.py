@@ -21,7 +21,7 @@ router = APIRouter()
 logger = logging.getLogger(__name__)
 
 @router.post("/generate-sql", response_model=SQLResponse)
-def generate_sql_route(request: PromptRequest):
+async def generate_sql_route(request: PromptRequest):
     try:
         sql = generate_sql(request.query)
         return {"sql": sql}
